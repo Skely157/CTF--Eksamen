@@ -34,7 +34,7 @@ function check_frankfurt(){
     <img class="img" src={image1} alt="halla">
     <br>
 
-    <p id="story">Julian sitter nok en gang fast i Tyskland (!) og trenger din hjelp til å finne han sine tre eiendeler for å komme seg hjem. <br>
+    <p id="story">Julian sitter nok en gang fast i Tyskland og trenger din hjelp til å finne han sine tre eiendeler for å komme seg hjem. <br>
         Han husker kun at eiendelene ligger i tre forskjellige byer: Berlin, Frankfurt og München. Kan du lete i de forskjellige byene og finne dem?
     </p>
     
@@ -64,3 +64,6 @@ function check_frankfurt(){
         height: 500px;
     }
 </style>
+
+
+<!-- Blablabla tekst -->
