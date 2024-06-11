@@ -25,6 +25,8 @@ function check_frankfurt(){
         alert("Feil flag")
     }
 }
+
+//gj-ctf{oktoberfest}
 </script>
 
 <div id="main">
@@ -65,5 +67,3 @@ function check_frankfurt(){
     }
 </style>
 
-
-<!-- Blablabla tekst -->
