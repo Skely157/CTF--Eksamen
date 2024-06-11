@@ -1,13 +1,13 @@
 <script>
 import Navbar from "./navbar.svelte";
-import image1 from "./images/tyskland.jpg"
+import image1 from "./images/tyskland.jpg";
 
 //midlertidig funksjon løsning fram til backend er fikset
 
 let berlin
 function check_berlin(){
-    const berlin_flag = "gj-ctf{mustafa_gemuse_kebab}"
-    if (berlin_flag === berlin){
+    const berlin_flagg = "gj-ctf{mustafa_gemuse_kebab}"
+    if (berlin_flagg === berlin){
         alert("Korrekt")
     }
     else{
@@ -15,17 +15,7 @@ function check_berlin(){
     }
 }
 
-let frankfurt
-function check_frankfurt(){
-    const berlin_flag = "gj-ctf{apfelwein}"
-    if (berlin_flag === frankfurt){
-        alert("Korrekt")
-    }
-    else{
-        alert("Feil flag")
-    }
-}
-
+//gj-ctf{apfelwein}
 //gj-ctf{oktoberfest}
 </script>
 
@@ -45,8 +35,8 @@ function check_frankfurt(){
         <input type="submit" value="Submit">
     </form>
     <br>
-    <form on:submit={check_frankfurt}>
-        <input type="text" id="frankfurt" name="frankfurt" placeholder="Frankfurt eiendel" bind:value={frankfurt}><br>
+    <form>
+        <input type="text" id="frankfurt" name="frankfurt" placeholder="Frankfurt eiendel"><br>
         <input type="submit" value="Submit">
     </form>
     <br>
