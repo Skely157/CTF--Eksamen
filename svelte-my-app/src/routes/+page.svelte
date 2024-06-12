@@ -4,19 +4,39 @@ import image1 from "./images/tyskland.jpg";
 
 //midlertidig funksjon løsning fram til backend er fikset
 
-let berlin
+let berlin = ""
 function check_berlin(){
     const berlin_flagg = "gj-ctf{mustafa_gemuse_kebab}"
     if (berlin_flagg === berlin){
-        alert("Korrekt")
+        alert("Riktig flagg!!")
     }
     else{
-        alert("Feil flag")
+        alert("Feil flagg... :(")
     }
 }
 
-//gj-ctf{apfelwein}
-//gj-ctf{oktoberfest}
+let frankfurt = ""
+function check_frankfurt(){
+    const frankfurt_flagg = "gj-ctf{apfelwein}"
+    if (frankfurt_flagg === frankfurt){
+        alert("Riktig flagg!!")
+    }
+    else{
+        alert("Feil flagg... :(")
+    }
+}
+
+let munchen = ""
+function check_munchen(){
+    const munchen_flagg = "gj-ctf{oktoberfest}"
+    if (munchen_flagg === munchen){
+        alert("Riktig flagg!!")
+    }
+    else{
+        alert("Feil flagg... :(")
+    }
+}
+
 </script>
 
 <div id="main">
@@ -35,13 +55,13 @@ function check_berlin(){
         <input type="submit" value="Submit">
     </form>
     <br>
-    <form>
-        <input type="text" id="frankfurt" name="frankfurt" placeholder="Frankfurt eiendel"><br>
+    <form on:submit={check_frankfurt}>
+        <input type="text" id="frankfurt" name="frankfurt" placeholder="Frankfurt eiendel" bind:value={frankfurt}><br>
         <input type="submit" value="Submit">
     </form>
     <br>
-    <form action="">
-        <input type="text" id="munchen" name="munchen" placeholder="München eiendel"><br>
+    <form on:submit={check_munchen}>
+        <input type="text" id="munchen" name="munchen" placeholder="München eiendel" bind:value={munchen}><br>
         <input type="submit" value="Submit">
     </form>
     <br>
